@@ -1,2 +1,5 @@
-This is a project creating a review aggregator for forums.
-We do it in particular for cloudynights.com.
+In this project, I created a web-app called staReviewer.com that uses natural language processing to understand
+people's discussion about specialized products on online forums.
+The data is scrapes from the world's largest forum for amateure astromoners, cloudynights.com. 
+We train two models that takes a post text as input, 
+the sentiment model discovers people's feelings and the relevance model discovers whether people would like to see this post.
