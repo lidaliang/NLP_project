@@ -1,14 +1,10 @@
 In this project, I created a web-app called staReviewer.com that uses natural language processing to understand
-people's discussion about specialized products on online forums.
-The data is scrapes from the world's largest forum for amateure astromoners, cloudynights.com. 
-We train two models that takes a post text as input, 
-the sentiment model discovers people's feelings and the relevance model discovers whether people would like to see this post.
+people's discussion about specialized products on online forums. This web-app is currently alive and served by AWS.
+
+The data is scrapes from the world's largest forum for amateure astromoners, cloudynights.com. We train two models that takes a post text as input, the sentiment model discovers people's feelings and the relevance model discovers whether people would like to see this post.
 
 The web-app in this version only include the data for a few products in order not to take up too much space. staReviewer.com has much more products saved in its database. 
 
 First, You will need to download the appropriate GloVe vectors by yourself at https://nlp.stanford.edu/projects/glove/.
 
-You can use tools I built to scrape cloudynights.com, which will take several hours.
-Or you can start from scraped data in /data/data_df.csv, run 'prepare_data_for_preprocessing.py' to generate raw text without coma.
-Then run the appropriate preprocessing files to generate dedicated, cleaned text and run stats.py to generate unigram and bigram counts. 
-These files are taken by the notebooks to create the model which is then tested and validated and eventually deployed in staReviewer.com. 
+You can use tools I built to scrape cloudynights.com, which will take several hours. Or you can start from scraped data in /data/data_df.csv, run 'prepare_data_for_preprocessing.py' to generate raw text without coma. Then run the appropriate preprocessing files to generate dedicated, cleaned text and run stats.py to generate unigram and bigram counts. These files are taken by the notebooks to create the model which is then tested and validated and eventually deployed in staReviewer.com. 
