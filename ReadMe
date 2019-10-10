@@ -1,4 +1,4 @@
-In this project, I created a web-app called staReviewer.com that uses natural language processing to understand
+In this project, I created a web-app https://staReviewer.com that uses natural language processing to understand
 people's discussion about specialized products on online forums. This web-app is currently alive and served by AWS.
 
 The data is scrapes from the world's largest forum for amateure astromoners, cloudynights.com. We train two models that takes a post text as input, the sentiment model discovers people's feelings and the relevance model discovers whether people would like to see this post.
