@@ -98,7 +98,9 @@ def soup_a_thread(url,n_pages = 30, wait_time = 1):
     return soups
 
 
-def text_cleaning(string):
+def text_cleaning(string,remove_coma=False):
+    if string!=string: return ""
+    elif remove_coma: string=string.replace(',','')
     string += "Edited by"
     string = string[:string.index("Edited by")].replace("\xa0","").replace("\n","").replace("\t","").replace("\r","")
     string = re.sub('\s+', ' ', string).strip()

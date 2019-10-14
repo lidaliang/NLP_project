@@ -1,13 +1,13 @@
-import web_scraping_tools
+from web_scraping_tools import text_cleaning
 import pickle
 import pandas as pd
 
 if __name__ == '__main__':
 	#remove comas
-	df_no_comas = pd.read_csv('../data/data_df.csv',index=False)
-	df_no_comas.text = [text_cleaning(text.replace(',',' ')) for text in df_no_comas.text.values if text == text]
-	df_no_comas.thread_name = [text_cleaning(text.replace(',',' ')) for text in df_no_comas.thread_name.values if text == text]
-	df_no_comas.forum_name = [text_cleaning(text.replace(',',' ')) for text in df_no_comas.forum_name.values if text == text]
+	df_no_comas = pd.read_csv('../data/data_df.csv')
+	df_no_comas.text = [text_cleaning(text) for text in df_no_comas.text.values]
+	df_no_comas.thread_name = [text_cleaning(text) for text in df_no_comas.thread_name.values]
+	df_no_comas.forum_name = [text_cleaning(text) for text in df_no_comas.forum_name.values]
 	df_no_comas.to_csv("../data/df-no-comas.csv")
 
 	df_hand = df_no_comas[df_no_comas['hand_labeled']==True]
