@@ -1,7 +1,7 @@
 In this project, I created a web-app https://www.stareviewer.com/ that uses natural language processing to understand
 people's discussion about specialized products on online forums. This web-app is alive and hosted in AWS.
 
-The data is scrapes from the world's largest forum for amateure astromoners, cloudynights.com. We train two models that takes a post text as input, the sentiment model discovers people's feelings and the relevance model discovers whether people would like to see this post.
+The data is scrapes from the world's largest forum for amateur astronomers, cloudynights.com. We train two models that takes a post text as input, the sentiment model discovers people's feelings and the relevance model discovers whether people would like to see this post.
 
 The web-app in this version only include the data for a few products in order not to take up too much space. staReviewer.com has much more products saved in its database. 
 
